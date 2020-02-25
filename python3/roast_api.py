@@ -38,6 +38,7 @@ class Request:
             self.headers,
             params=self.params,
             data=self.data,
+            auth=self.auth,
         ).prepare(), verify=self.verify_ssl)
 
 
